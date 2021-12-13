@@ -8,7 +8,7 @@ const routes: Array<RouteRecordRaw> = [
             name: 'Home'
         },
         redirect: '/effect',
-        component: () => import('@/views/layout/Index.vue'),
+        component: () => import('/@/views/layout/Index.vue'),
         children: [
             {
                 path: 'effect',
@@ -17,7 +17,7 @@ const routes: Array<RouteRecordRaw> = [
                     name: '效果'
                 },
                 redirect: '/effect/fullScreen',
-                component: () => import('@/views/effect/Index.vue'),
+                component: () => import('/@/views/effect/Index.vue'),
                 children:[
                     {
                         path: 'fullScreen',
@@ -25,7 +25,7 @@ const routes: Array<RouteRecordRaw> = [
                         meta: {
                             name: '全屏效果'
                         },
-                        component: () => import('@/views/effect/FullScreen.vue')
+                        component: () => import('/@/views/effect/FullScreen.vue')
                     }
                 ]
             }
